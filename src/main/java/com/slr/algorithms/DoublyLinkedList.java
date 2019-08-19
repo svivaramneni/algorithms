@@ -9,7 +9,7 @@ public class DoublyLinkedList {
 	public void addNodeAtHead(int data) {
 		DNode newNode = new DNode(data);
 		DNode currentHead = this.head;
-		if(currentHead != null) {
+		if (currentHead != null) {
 			newNode.setNextNode(this.head);
 			currentHead.setPreviousNode(newNode);
 		}
@@ -23,7 +23,7 @@ public class DoublyLinkedList {
 	public void sort() {
 		DNode current = this.head;
 
-		if(current.getData() > current.getNextNode().getData()) {
+		if (current.getData() > current.getNextNode().getData()) {
 
 			DNode nxtNode = current.getNextNode();
 			nxtNode.getPreviousNode();
